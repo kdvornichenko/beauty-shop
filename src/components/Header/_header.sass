@@ -31,22 +31,9 @@
 				@media screen and ( max-width: 376px )
 					display: none
 		.call
-			@include flex-items-center
-			gap: 40px
-
-			&__number
-				font-size: 16px
+			@include call()
 			&__btn
-				padding: 13px 26px
-				font-size: 14px
-				color: var(--main-color-black)
-				border: 2px solid var(--main-color-green)
-				border-radius: 40px
-				background-color: var(--main-color-white)
-				transition: $main-transition
-				&:hover
-					color: var(--main-color-white)
-					background-color: var(--main-color-green)
+				@include round-btn(13px 26px, var(--main-color-black), var(--main-color-green), 40px, var(--main-color-white), var(--main-color-white), var(--main-color-green))
 	hr
 		height: 1px
 		background-color: var(--main-color-gray)

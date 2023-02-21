@@ -3,7 +3,17 @@
 	@@include('./components/Head/Head.html')
 	<body>
 		@@include('./components/Header/Header.html')
-		<main></main>
+		<main>
+			<section class="first-screen">
+				@@include('./components/FirstScreen/FirstScreen.html')
+			</section>
+			<section class="special-order">
+				@@include('./components/SpecialOrder/SpecialOrder.html')
+			</section>
+			<section class="banners">
+				@@include('./components/Banners/Banners.html')
+			</section>
+		</main>
 		@@include('./components/Footer/Footer.html')
 	</body>
 	<script type="module" src="./scripts/main.js"></script>
